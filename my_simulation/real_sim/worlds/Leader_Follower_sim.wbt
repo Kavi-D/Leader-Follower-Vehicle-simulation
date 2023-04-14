@@ -1,0 +1,613 @@
+#VRML_SIM R2022a utf8
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.06483267341510848 -0.9971812187348482 0.03776693607287731 4.871445322851321
+  position -1.2811793756134005 -0.03588349147142156 5.498324699256951
+}
+TexturedBackground {
+  luminosity 2
+}
+RectangleArena {
+  floorSize 3 2
+}
+Solid {
+  translation -1.38 0.17 0.05
+  scale 2 2 2
+  children [
+    DEF square Shape {
+      appearance PBRAppearance {
+        baseColor 0.360784 0.207843 0.4
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.1 0.1 0.2
+      }
+    }
+  ]
+  name "solid(4)"
+  boundingObject USE square
+  physics Physics {
+  }
+}
+Solid {
+  translation -1.02 -0.18 0.05
+  scale 2 2 2
+  children [
+    DEF square Shape {
+      appearance PBRAppearance {
+        baseColor 0.360784 0.207843 0.4
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.1 0.1 0.2
+      }
+    }
+  ]
+  name "solid(8)"
+  boundingObject USE square
+  physics Physics {
+  }
+}
+Solid {
+  translation -0.92 -0.48 0.05
+  scale 2 2 2
+  children [
+    DEF square Shape {
+      appearance PBRAppearance {
+        baseColor 0.360784 0.207843 0.4
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.1 0.1 0.2
+      }
+    }
+  ]
+  name "solid(16)"
+  boundingObject USE square
+  physics Physics {
+  }
+}
+Solid {
+  translation -0.58 0.47 0.05
+  scale 2 2 2
+  children [
+    DEF square Shape {
+      appearance PBRAppearance {
+        baseColor 0.360784 0.207843 0.4
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.1 0.1 0.2
+      }
+    }
+  ]
+  name "solid(5)"
+  boundingObject USE square
+  physics Physics {
+  }
+}
+Solid {
+  translation 0.06 0.35 0.05
+  scale 2 2 2
+  children [
+    DEF square Shape {
+      appearance PBRAppearance {
+        baseColor 0.360784 0.207843 0.4
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.1 0.1 0.2
+      }
+    }
+  ]
+  name "solid(17)"
+  boundingObject USE square
+  physics Physics {
+  }
+}
+Solid {
+  translation -0.87 0.88 0.05
+  scale 2 2 2
+  children [
+    DEF square Shape {
+      appearance PBRAppearance {
+        baseColor 0.360784 0.207843 0.4
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.1 0.1 0.2
+      }
+    }
+  ]
+  name "solid(9)"
+  boundingObject USE square
+  physics Physics {
+  }
+}
+Solid {
+  translation -0.62 -0.84 0.05
+  scale 2 2 2
+  children [
+    DEF square Shape {
+      appearance PBRAppearance {
+        baseColor 0.360784 0.207843 0.4
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.1 0.1 0.2
+      }
+    }
+  ]
+  name "solid(10)"
+  boundingObject USE square
+  physics Physics {
+  }
+}
+Solid {
+  translation 1.36 0.91 0.05
+  scale 2 2 2
+  children [
+    DEF square Shape {
+      appearance PBRAppearance {
+        baseColor 0.360784 0.207843 0.4
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.1 0.1 0.2
+      }
+    }
+  ]
+  name "solid(7)"
+  boundingObject USE square
+  physics Physics {
+  }
+}
+Solid {
+  translation -0.21 -0.76 0.21
+  scale 2 2 2
+  children [
+    PointLight {
+      attenuation 0 0 10
+      location 0 0 0.1
+    }
+    DEF square Shape {
+      appearance PBRAppearance {
+        baseColor 0.45098 0.823529 0.0862745
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.1 0.1 0.2
+      }
+    }
+  ]
+  name "solid(3)"
+  boundingObject USE square
+  physics Physics {
+  }
+}
+Solid {
+  translation -0.51 -0.56 0.26
+  scale 2 2 2
+  children [
+    DEF square Shape {
+      appearance PBRAppearance {
+        baseColor 0.360784 0.207843 0.4
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.1 0.1 0.2
+      }
+    }
+  ]
+  name "solid(1)"
+  boundingObject USE square
+  physics Physics {
+  }
+}
+Solid {
+  translation 0.27 -0.25 0.05
+  scale 2 2 2
+  children [
+    DEF square Shape {
+      appearance PBRAppearance {
+        baseColor 0.360784 0.207843 0.4
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.1 0.1 0.2
+      }
+    }
+  ]
+  name "solid(2)"
+  boundingObject USE square
+  physics Physics {
+  }
+}
+Solid {
+  translation -0.02 -0.25 0.05
+  scale 2 2 2
+  children [
+    DEF square Shape {
+      appearance PBRAppearance {
+        baseColor 0.360784 0.207843 0.4
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.1 0.1 0.2
+      }
+    }
+  ]
+  name "solid(15)"
+  boundingObject USE square
+  physics Physics {
+  }
+}
+Solid {
+  translation 0.91 -0.34 0.05
+  scale 2 2 2
+  children [
+    DEF square Shape {
+      appearance PBRAppearance {
+        baseColor 0.360784 0.207843 0.4
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.1 0.1 0.2
+      }
+    }
+  ]
+  name "solid(14)"
+  boundingObject USE square
+  physics Physics {
+  }
+}
+Solid {
+  translation 1.37 -0.88 0.05
+  scale 2 2 2
+  children [
+    DEF square Shape {
+      appearance PBRAppearance {
+        baseColor 0.360784 0.207843 0.4
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.1 0.1 0.2
+      }
+    }
+  ]
+  name "solid(13)"
+  boundingObject USE square
+  physics Physics {
+  }
+}
+Solid {
+  translation -0.89 0.06 0.05
+  scale 2 2 2
+  children [
+    DEF square Shape {
+      appearance PBRAppearance {
+        baseColor 0.360784 0.207843 0.4
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.1 0.1 0.2
+      }
+    }
+  ]
+  name "solid(12)"
+  boundingObject USE square
+  physics Physics {
+  }
+}
+Solid {
+  translation 0.44 0.75 0.05
+  scale 2 2 2
+  children [
+    DEF square Shape {
+      appearance PBRAppearance {
+        baseColor 0.360784 0.207843 0.4
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.7 0.2 0.2
+      }
+    }
+  ]
+  name "solid(11)"
+  boundingObject USE square
+  physics Physics {
+  }
+}
+Solid {
+  translation -0.26 -0.39 0.05
+  scale 2 2 2
+  children [
+    DEF square Shape {
+      appearance PBRAppearance {
+        baseColor 0.360784 0.207843 0.4
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.1 0.1 0.2
+      }
+    }
+  ]
+  name "solid(6)"
+  boundingObject USE square
+  physics Physics {
+  }
+}
+Robot {
+  translation -0.7 -0.07 0.0415
+  children [
+    Solid {
+      translation 0.04 0 0.02
+      scale 0.2 0.2 0.2
+      children [
+        LightSensor {
+          translation 0.1 -0.2 0
+          rotation 0 0 1 -0.7853996938995746
+          scale 6 6 6
+          name "light_sensor_right"
+        }
+        LightSensor {
+          translation 0.1 0.2 0
+          rotation 0.7071067811865475 0 0.7071067811865475 1.3089996938995747
+          scale 6 6 6
+          name "light_sensor_left"
+        }
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.960784 0.47451 0
+            roughness 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.1 0.1 0.1
+          }
+        }
+      ]
+      name "Sensor_Allocator"
+    }
+    DEF Body Transform {
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.643137 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cylinder {
+            height 0.08
+            radius 0.045
+          }
+        }
+      ]
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        axis 0 1 0
+        anchor 0 -0.045 -0.016
+      }
+      device [
+        RotationalMotor {
+          name "rightmotor"
+        }
+      ]
+      endPoint Solid {
+        translation 0 -0.045 -0.016
+        rotation 1 -7.853589927914981e-17 3.926794963957491e-17 1.5699999999999996
+        children [
+          DEF Wheel Shape {
+            appearance PBRAppearance {
+              baseColor 0.929412 0.831373 0
+              roughness 1
+              metalness 0
+            }
+            geometry Cylinder {
+              height 0.01
+              radius 0.025
+            }
+          }
+        ]
+        boundingObject USE Wheel
+        physics Physics {
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        axis 0 1 0
+        anchor 0 0.045 -0.015
+      }
+      device [
+        DEF motor_2 RotationalMotor {
+          name "leftmotor"
+        }
+      ]
+      endPoint Solid {
+        translation 0 0.045 -0.015
+        rotation 0.16205403431738766 0.6980379301765361 -0.6974822850770593 2.8200263041025155
+        children [
+          USE Wheel
+        ]
+        boundingObject USE Wheel
+        physics DEF wheel_pysics Physics {
+        }
+      }
+    }
+    RangeFinder {
+      translation 0.04 0 0.0035
+      rotation 0 1 0 -0.2617996938995747
+      children [
+        DEF RANGEFINDER Transform {
+          rotation 0 1 0 1.5707996938995747
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 0.12549 0.290196 0.529412
+                roughness 1
+                metalness 0
+              }
+              geometry Cylinder {
+                height 0.001
+                radius 0.002
+              }
+            }
+          ]
+          rotationStep 0.261799
+        }
+      ]
+      name "range_finder"
+      boundingObject USE RANGEFINDER
+      fieldOfView 1.5
+      width 300
+      height 100
+    }
+  ]
+  name "Leader_Robot"
+  boundingObject USE Body
+  physics Physics {
+  }
+  rotationStep 0.261799
+  radarCrossSection 1
+  controller "drive_my_robot"
+}
+Robot {
+  translation -1.42 -0.08 0.0615
+  children [
+    LightSensor {
+      scale 2 2 2
+      name "light_sensor"
+    }
+    DEF Body Transform {
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.12549 0.290196 0.529412
+            roughness 1
+            metalness 0
+          }
+          geometry Cylinder {
+            height 0.08
+            radius 0.045
+          }
+        }
+      ]
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        axis 0 1 0
+        anchor 0 -0.045 -0.016
+      }
+      device [
+        RotationalMotor {
+          name "rightmotor"
+        }
+      ]
+      endPoint Solid {
+        translation 0 -0.045 -0.016
+        rotation 1 3.92679496395749e-16 7.85358992791498e-17 1.5699999999999996
+        children [
+          DEF Wheel Shape {
+            appearance PBRAppearance {
+              baseColor 0.929412 0.831373 0
+              roughness 1
+              metalness 0
+            }
+            geometry Cylinder {
+              height 0.01
+              radius 0.025
+            }
+          }
+        ]
+        name "solid(1)"
+        boundingObject USE Wheel
+        physics Physics {
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        axis 0 1 0
+        anchor 0 0.045 -0.015
+      }
+      device [
+        DEF motor_2 RotationalMotor {
+          name "leftmotor"
+        }
+      ]
+      endPoint Solid {
+        translation 0 0.045 -0.015
+        rotation 0.1620540343173876 0.6980379301765361 -0.6974822850770592 2.820026304102516
+        children [
+          USE Wheel
+        ]
+        boundingObject USE Wheel
+        physics DEF wheel_pysics Physics {
+        }
+      }
+    }
+    RangeFinder {
+      translation 0.04 0 0.0035
+      rotation 0 1 0 -0.2617996938995747
+      children [
+        DEF RANGEFINDER Transform {
+          rotation 0 1 0 1.5707996938995747
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 0.12549 0.290196 0.529412
+                roughness 1
+                metalness 0
+              }
+              geometry Cylinder {
+                height 0.001
+                radius 0.002
+              }
+            }
+          ]
+          rotationStep 0.261799
+        }
+      ]
+      name "range_finder"
+      boundingObject USE RANGEFINDER
+      fieldOfView 1.5
+      width 300
+      height 100
+    }
+    Radar {
+      translation 0.06 0 0
+      rotation 0 1 0 0
+      name "radar_sensor"
+      minRange 0.1
+      maxRange 1.5
+      horizontalFieldOfView 0.5
+      verticalFieldOfView 0.3
+    }
+  ]
+  name "Follower_Robot"
+  boundingObject USE Body
+  physics Physics {
+  }
+  rotationStep 0.261799
+  controller "Follower_robot_controller"
+}

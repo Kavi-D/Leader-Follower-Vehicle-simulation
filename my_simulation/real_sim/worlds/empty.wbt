@@ -1,0 +1,112 @@
+#VRML_SIM R2022a utf8
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.41979384600692615 0.22779231671269992 -0.8785691704705864 2.4702631626417473
+  position 0.5609280881921869 0.43933748155893404 0.7426337477708278
+}
+TexturedBackground {
+  luminosity 2
+}
+RectangleArena {
+  floorSize 2 2
+}
+Solid {
+  translation 0 -0.86 0.05
+  children [
+    PointLight {
+      attenuation 0 0 6
+      location 0 0 0.1
+    }
+    DEF square Shape {
+      appearance PBRAppearance {
+        baseColor 0.360784 0.207843 0.4
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  boundingObject USE square
+  physics Physics {
+  }
+}
+Robot {
+  translation 0 0 0.0415
+  children [
+    DEF Body Transform {
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.643137 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cylinder {
+            height 0.08
+            radius 0.045
+          }
+        }
+      ]
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        axis 0 1 0
+        anchor 0 -0.045 -0.02
+      }
+      device [
+        RotationalMotor {
+          name "motor_1"
+        }
+      ]
+      endPoint Solid {
+        translation 2.689106648629309e-06 -0.04499982975855056 -0.01999674806498677
+        rotation -0.9968027906527144 0.07921422076060423 -0.010454844630649324 4.719060877997353
+        children [
+          DEF Wheel Shape {
+            appearance PBRAppearance {
+              baseColor 0.929412 0.831373 0
+              roughness 1
+              metalness 0
+            }
+            geometry Cylinder {
+              height 0.01
+              radius 0.025
+            }
+          }
+        ]
+        boundingObject USE Wheel
+        physics Physics {
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        axis 0 1 0
+        anchor 0 0.045 -0.015
+      }
+      device [
+        DEF motor_2 RotationalMotor {
+          name "motor_2"
+        }
+      ]
+      endPoint Solid {
+        translation 0 0.045 -0.015
+        rotation 0.1620540343173887 0.6980379301765359 -0.6974822850770593 2.8200263041025155
+        children [
+          USE Wheel
+        ]
+        boundingObject USE Wheel
+        physics DEF wheel_pysics Physics {
+        }
+      }
+    }
+  ]
+  name "Leader_Robot"
+  boundingObject USE Body
+  physics Physics {
+  }
+  controller "drive_my_robot"
+}

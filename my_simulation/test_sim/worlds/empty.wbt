@@ -1,0 +1,77 @@
+#VRML_SIM R2022a utf8
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.274207444488158 -0.014918831921517961 0.9615548376672916 2.985635469239061
+  position -0.20684926125572423 -0.007278447271958394 0.5398095864090563
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 3 3
+}
+Robot {
+  translation -0.93 0 0.04
+  children [
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        anchor 0 0 0.02
+      }
+      device [
+        RotationalMotor {
+          name "leftmotor"
+        }
+      ]
+      endPoint Solid {
+        children [
+          DEF LEFTWHEEL Transform {
+            translation 0.02 0.0425 0
+            rotation 1 0 0 1.5707996938995747
+          }
+        ]
+        name "leftwheel"
+      }
+    }
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.4 0 0.3
+        roughness 1
+        metalness 0
+      }
+      geometry Cylinder {
+        height 0.075
+        radius 0.04
+      }
+    }
+    DEF BODYSHAPE Transform {
+    }
+  ]
+  name "WheelBot"
+  boundingObject USE BODYSHAPE
+  physics Physics {
+    density -1
+    mass 0.05
+  }
+}
+Solid {
+  translation 0 0 0.05
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.305882 0.603922 0.0235294
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+  }
+}
